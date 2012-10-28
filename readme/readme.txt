@@ -1,0 +1,1 @@
+This is a test project for a Windows 8 application.
