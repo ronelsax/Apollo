@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="83c69c1f-dc8e-4475-b7f7-108700afe167" Publisher="CN=abmate" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Apollo</DisplayName>
+    <PublisherDisplayName>abmate</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Apollo.App">
+      <VisualElements DisplayName="Apollo" Logo="Assets\Logo.jpg" SmallLogo="Assets\SmallLogo.png" Description="Apollo RSS reader. Intended for practice purposes." ForegroundText="light" BackgroundColor="#093D70" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.jpg" ShortName="Apollo" />
+        <SplashScreen Image="Assets\SplashScreen.jpg" />
+        <InitialRotationPreference>
+          <Rotation Preference="portrait" />
+          <Rotation Preference="landscape" />
+          <Rotation Preference="portraitFlipped" />
+          <Rotation Preference="landscapeFlipped" />
+        </InitialRotationPreference>
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
